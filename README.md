@@ -27,13 +27,13 @@ registry | https://registry.npmjs.org/ | Registry url
 ### API
 
 ```javascript
-const DVC = require('./index')
+const DVC = require('dvc')
 const dvc = new DVC({
   registry: 'http://localhost/registry'
 })
 
 dvc.check('i18n-light', 'ipc-emitter')
   .then((info) => {
-    console.info(infon)
+    console.info(info)
   })
 ```
