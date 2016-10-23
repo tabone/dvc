@@ -1,7 +1,7 @@
 {
   "name": "dvc",
   "bin": "cli.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Checks for outdated dependencies",
   "main": "index.js",
   "repository": {
