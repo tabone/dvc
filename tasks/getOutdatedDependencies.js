@@ -173,7 +173,7 @@ function checkDepVersion (moduleDeps, latestVersions) {
  *                                      dependencies and dev dependencies of the
  *                                      provided module
  */
-function joinDeps(module) {
+function joinDeps (module) {
   let deps = []
 
   if (module.deps !== undefined) {
