@@ -31,7 +31,7 @@ module.exports = function getOutdatedDependencies (modules) {
  * node modules specified to be checked.
  * @param  {Object} info.modules        Info about the node modules to be
  *                                      checked.
- * @this   {DVC}                              DVC instance.
+ * @this   {DVC}                        DVC instance.
  * @return {Object}        Contains info about the node modules to be checked
  *                         and an object which will store the latest version of
  *                         the dependencies.
@@ -55,6 +55,7 @@ function cacheModulesVersion (modules) {
  *                                      checked.
  * @param  {Object} info.latestVersion  Info about the latest version of all the
  *                                      node modules.
+ * @this   {DVC}                        DVC instance.
  * @return {Object}        Contains info about the node modules to be checked
  *                         and an object which will store the latest version of
  *                         the dependencies.
@@ -77,6 +78,7 @@ function cacheDepsName (info) {
  *                                      checked.
  * @param  {Object} info.latestVersion  Info about the latest version of all the
  *                                      node modules.
+ * @this   {DVC}                        DVC instance.
  * @return {Object}        Contains info about the node modules to be checked
  *                         and an object which will store the latest version of
  *                         the dependencies.
@@ -114,6 +116,7 @@ function cacheDepsLatestVersion (info) {
  *                                      checked.
  * @param  {Object} info.latestVersion  Info about the latest version of all the
  *                                      node modules.
+ * @this   {DVC}                        DVC instance.
  * @return {Object}                     Contains info about the node modules
  *                                      which have outdated dependencies.
  */
@@ -140,6 +143,7 @@ function getOutdatedDeps (info) {
  *                                        module specified to be checked.
  * @param  {Object} latestVersions        Info about the latest version of all
  *                                        the node modules.
+ * @this   {DVC}                          DVC instance.
  * @return {Array}                        List of outdated dependencies.
  */
 function checkDepVersion (moduleDeps, latestVersions) {
@@ -169,6 +173,7 @@ function checkDepVersion (moduleDeps, latestVersions) {
  * in a single array.
  * @param  {Object} info.modules        Info about the node modules to be
  *                                      checked.
+ * @this   {DVC}                        DVC instance.
  * @return {Array{String}}              Array containing the name of all the
  *                                      dependencies and dev dependencies of the
  *                                      provided module
